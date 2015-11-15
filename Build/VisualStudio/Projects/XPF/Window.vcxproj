@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Context.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\EGLCheck.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\EglContext.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\GlContext.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\GlResource.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Joystick.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\JoystickManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Keyboard.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Mouse.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Sensor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\SensorManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Touch.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\VideoMode.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Win32\InputImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Win32\JoystickImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Win32\SensorImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Win32\VideoModeImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Win32\WglContext.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Win32\WglExtensions.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Win32\WindowImplWin32.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\Window.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\Window\WindowImpl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Context.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\ContextSettings.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Event.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Export.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\GlResource.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Joystick.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Keyboard.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Mouse.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Sensor.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Touch.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\VideoMode.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\Window.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\WindowHandle.hpp" />
+    <ClInclude Include="..\..\..\..\Include\XPF\Window\WindowStyle.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\EGLCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\EglContext.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\GlContext.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\InputImpl.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\JoystickImpl.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\JoystickManager.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\SensorImpl.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\SensorManager.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\VideoModeImpl.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\Win32\InputImpl.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\Win32\JoystickImpl.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\Win32\SensorImpl.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\Win32\WglContext.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\Win32\WglExtensions.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\Win32\WindowImplWin32.hpp" />
+    <ClInclude Include="..\..\..\..\Source\XPF\Window\WindowImpl.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ANGLE\libEGL.vcxproj">
+      <Project>{8cd24a29-7e0f-4f96-b02c-c6c7b25ef863}</Project>
+    </ProjectReference>
+    <ProjectReference Include="System.vcxproj">
+      <Project>{49739f23-a888-4ae2-a5cb-31fb4b95f937}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BFA62BD8-C8E4-44CE-9B4F-B4A88634008F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Window</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENGL_ES;XPF_WINDOW_EXPORTS;WIN32;_DEBUG;_WINDOWS;_USRDLL;WINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include\ANGLE;..\..\..\..\Include;..\..\..\..\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENGL_ES;XPF_WINDOW_EXPORTS;_DEBUG;_WINDOWS;_USRDLL;WINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include\ANGLE;..\..\..\..\Include;..\..\..\..\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPENGL_ES;XPF_WINDOW_EXPORTS;WIN32;NDEBUG;_WINDOWS;_USRDLL;WINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include\ANGLE;..\..\..\..\Include;..\..\..\..\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPENGL_ES;XPF_WINDOW_EXPORTS;NDEBUG;_WINDOWS;_USRDLL;WINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include\ANGLE;..\..\..\..\Include;..\..\..\..\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

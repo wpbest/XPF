@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Loading">
+      <UniqueIdentifier>{ecc9c343-e3b0-419a-94c6-f4abe3b4d725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Widgets">
+      <UniqueIdentifier>{fb0f4579-8670-4642-9367-7d29590766f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Widgets\extra">
+      <UniqueIdentifier>{60d54f2d-d5b4-4e29-b5b2-95c205ef4880}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\BoxLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Clipboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Container.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\HorizontalLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Layout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Signal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\TextureManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Transformable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\VerticalLayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\DataIO.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\Deserializer.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\ObjectConverter.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\Serializer.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\Theme.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\ThemeLoader.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\WidgetConverter.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\WidgetLoader.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\WidgetSaver.cpp">
+      <Filter>Source Files\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Button.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Canvas.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ChatBox.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\CheckBox.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ChildWindow.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ClickableWidget.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ComboBox.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\EditBox.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Grid.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Knob.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Label.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ListBox.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\MenuBar.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\MessageBox.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Panel.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Picture.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ProgressBar.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\RadioButton.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Scrollbar.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Slider.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\SpinButton.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Tab.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\TextBox.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ToolTip.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\extra\AnimatedPicture.cpp">
+      <Filter>Source Files\Widgets\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\extra\Slider2d.cpp">
+      <Filter>Source Files\Widgets\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\extra\SpriteSheet.cpp">
+      <Filter>Source Files\Widgets\extra</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

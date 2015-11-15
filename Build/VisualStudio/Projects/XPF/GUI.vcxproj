@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Animation.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\BoxLayout.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Clipboard.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Container.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Font.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Global.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Gui.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\HorizontalLayout.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Layout.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\DataIO.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\Deserializer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\ObjectConverter.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\Serializer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\Theme.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\ThemeLoader.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\WidgetConverter.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\WidgetLoader.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Loading\WidgetSaver.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Signal.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Texture.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\TextureManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Transformable.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\VerticalLayout.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widget.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Button.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Canvas.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ChatBox.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\CheckBox.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ChildWindow.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ClickableWidget.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ComboBox.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\EditBox.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\extra\AnimatedPicture.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\extra\Slider2d.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\extra\SpriteSheet.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Grid.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Knob.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Label.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ListBox.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\MenuBar.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\MessageBox.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Panel.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Picture.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ProgressBar.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\RadioButton.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Scrollbar.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Slider.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\SpinButton.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\Tab.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\TextBox.cpp" />
+    <ClCompile Include="..\..\..\..\Source\XPF\GUI\Widgets\ToolTip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Graphics.vcxproj">
+      <Project>{b84da050-a862-4b96-85db-b55ce5a802fb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="System.vcxproj">
+      <Project>{49739f23-a888-4ae2-a5cb-31fb4b95f937}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Window.vcxproj">
+      <Project>{bfa62bd8-c8e4-44ce-9b4f-b4a88634008f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD275858-C144-4634-86F9-D66876086AD3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>XPF_GUI_EXPORTS;WIN32;_DEBUG;_WINDOWS;_USRDLL;GUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include;..\..\..\..\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>XPF_GUI_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include;..\..\..\..\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>XPF_GUI_EXPORTS;WIN32;NDEBUG;_WINDOWS;_USRDLL;GUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include;..\..\..\..\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>XPF_GUI_EXPORTS;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include;..\..\..\..\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

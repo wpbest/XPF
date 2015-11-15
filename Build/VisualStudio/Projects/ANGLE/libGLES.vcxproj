@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Source\ANGLE\libGLESv2\libGLES.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\angleutils.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\debug.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\event_tracer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\Float16ToFloat32.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\mathutil.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\MemoryBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\string_utils.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\tls.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\common\utilities.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\DiagnosticsBase.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\DirectiveHandlerBase.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\DirectiveParser.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\ExpressionParser.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Input.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Lexer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Macro.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\MacroExpander.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Preprocessor.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Token.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Tokenizer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ArrayReturnValueToOutParameter.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ASTMetadataHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\blocklayout.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\blocklayoutHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\BuiltInFunctionEmulator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\BuiltInFunctionEmulatorGLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\BuiltInFunctionEmulatorHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\Cache.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\CallDAG.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\CodeGen.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\CompilerTranslator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\depgraph\DependencyGraph.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\depgraph\DependencyGraphBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\depgraph\DependencyGraphOutput.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\depgraph\DependencyGraphTraverse.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\Diagnostics.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\DirectiveHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\EmulatePrecision.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ExtensionGLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\FlagStd140Structs.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ForLoopUnroll.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\glslang_lex.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\glslang_tab.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\InfoSink.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\Initialize.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\InitializeDll.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\InitializeParseContext.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\InitializeVariables.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\Intermediate.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\IntermNode.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\intermOut.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\IntermTraverse.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\LoopInfo.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\Operator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\OutputESSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\OutputGLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\OutputGLSLBase.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\OutputHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ParseContext.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\PoolAlloc.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\PruneEmptyDeclarations.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\RecordConstantPrecision.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\RegenerateStructNames.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\RemoveDynamicIndexing.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\RemovePow.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\RemoveSwitchFallThrough.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\RewriteDoWhile.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\RewriteElseBlocks.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ScalarizeVecAndMatConstructorArgs.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\SearchSymbol.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\SeparateArrayInitialization.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\SeparateDeclarations.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\SeparateExpressionsReturningArrays.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ShaderLang.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ShaderVars.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\StructureHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\SymbolTable.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\timing\RestrictFragmentShaderTiming.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\timing\RestrictVertexShaderTiming.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\TranslatorESSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\TranslatorGLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\TranslatorHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\Types.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\UnfoldShortCircuitAST.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\UnfoldShortCircuitToIf.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\UniformHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\util.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\UtilsHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ValidateGlobalInitializer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ValidateLimitations.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ValidateOutputs.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\ValidateSwitch.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\VariableInfo.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\VariablePacker.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\compiler\translator\VersionGLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\angletypes.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\AttributeMap.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Buffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Caps.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Compiler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Config.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Context.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Data.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Device.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Display.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Error.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Fence.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\formatutils.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Framebuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\FramebufferAttachment.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\HandleAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Image.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\ImageIndex.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\IndexRangeCache.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Platform.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Program.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Query.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\queryconversions.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\RefCountObject.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Renderbuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\BufferD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\CompilerD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\copyimage.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Blit11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Buffer11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Clear11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\DebugAnnotator11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\dxgi_support_table.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Fence11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\formatutils11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Framebuffer11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Image11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\IndexBuffer11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\InputLayoutCache.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\internal_format_initializer_table.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\load_functions_table_autogen.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\PixelTransfer11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Query11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Renderer11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\renderer11_utils.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\RenderStateCache.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\RenderTarget11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\ShaderExecutable11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\SwapChain11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\swizzle_format_info_autogen.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\TextureStorage11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\texture_format_table_autogen.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Trim11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\VertexBuffer11.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\win32\NativeWindow.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Blit9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Buffer9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\DebugAnnotator9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Fence9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\formatutils9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Framebuffer9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Image9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\IndexBuffer9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Query9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Renderer9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\renderer9_utils.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\RenderTarget9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\ShaderExecutable9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\SwapChain9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\TextureStorage9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\VertexBuffer9.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\VertexDeclarationCache.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\DeviceD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\DisplayD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\DynamicHLSL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\EGLImageD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\formatutilsD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\FramebufferD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\HLSLCompiler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\ImageD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\IndexBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\IndexDataManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\loadimage.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\loadimageSSE2.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\loadimage_etc.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\ProgramD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\RenderbufferD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\RendererD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\RenderTargetD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\ShaderD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\ShaderExecutableD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\SurfaceD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\TextureD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\TransformFeedbackD3D.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\VertexBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\VertexDataManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\DeviceImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\DisplayImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\BlitGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\BufferGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\CompilerGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\DisplayGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\FenceNVGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\FenceSyncGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\formatutilsgl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\FramebufferGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\FunctionsGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\ProgramGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\QueryGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\RenderbufferGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\RendererGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\renderergl_utils.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\SamplerGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\ShaderGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\StateManagerGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\SurfaceGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\TextureGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\TransformFeedbackGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\VertexArrayGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\DisplayWGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\FunctionsWGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\PbufferSurfaceWGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\wgl_utils.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\WindowSurfaceWGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\Renderer.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\SurfaceImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\ResourceManager.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Sampler.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Shader.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\State.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Surface.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Texture.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\TransformFeedback.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\Uniform.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\validationEGL.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\validationES.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\validationES2.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\validationES3.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\VertexArray.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libANGLE\VertexAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_egl.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_egl_ext.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_gles_2_0.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_gles_2_0_ext.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_gles_3_0.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libGLESv2\global_state.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\libGLESv2\libGLESv2.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\third_party\compiler\ArrayBoundsClamper.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\third_party\murmurhash\MurmurHash3.cpp" />
+    <ClCompile Include="..\..\..\..\Source\ANGLE\third_party\systeminfo\SystemInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\Source\ANGLE\libGLESv2\libGLESv2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\angleutils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\BitSetIterator.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\debug.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\event_tracer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\mathutil.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\matrix_utils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\MemoryBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\Optional.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\platform.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\string_utils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\tls.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\utilities.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\common\version.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\DiagnosticsBase.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\DirectiveHandlerBase.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\DirectiveParser.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\ExpressionParser.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Input.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Lexer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Macro.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\MacroExpander.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\numeric_lex.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\pp_utils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Preprocessor.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\SourceLocation.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Token.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\preprocessor\Tokenizer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ArrayReturnValueToOutParameter.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ASTMetadataHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\BaseTypes.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\blocklayout.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\blocklayoutHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\BuiltInFunctionEmulator.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\BuiltInFunctionEmulatorGLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\BuiltInFunctionEmulatorHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\Cache.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\CallDAG.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\Common.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\CompilerTranslator.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ConstantUnion.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\depgraph\DependencyGraph.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\depgraph\DependencyGraphBuilder.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\depgraph\DependencyGraphOutput.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\Diagnostics.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\DirectiveHandler.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\EmulatePrecision.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ExtensionBehavior.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ExtensionGLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\FlagStd140Structs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ForLoopUnroll.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\glslang.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\glslang_tab.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\HashNames.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\InfoSink.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\Initialize.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\InitializeDll.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\InitializeGlobals.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\InitializeParseContext.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\InitializeVariables.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\Intermediate.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\IntermNode.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\length_limits.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\LoopInfo.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\MMap.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\NodeSearch.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\Operator.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\OutputESSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\OutputGLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\OutputGLSLBase.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\OutputHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ParseContext.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\PoolAlloc.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\Pragma.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\PruneEmptyDeclarations.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\RecordConstantPrecision.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\RegenerateStructNames.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\RemoveDynamicIndexing.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\RemovePow.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\RemoveSwitchFallThrough.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\RenameFunction.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\RewriteDoWhile.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\RewriteElseBlocks.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ScalarizeVecAndMatConstructorArgs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\SearchSymbol.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\SeparateArrayInitialization.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\SeparateDeclarations.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\SeparateExpressionsReturningArrays.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\StructureHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\SymbolTable.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\timing\RestrictFragmentShaderTiming.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\timing\RestrictVertexShaderTiming.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\TranslatorESSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\TranslatorGLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\TranslatorHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\Types.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\UnfoldShortCircuitAST.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\UnfoldShortCircuitToIf.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\UniformHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\util.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\UtilsHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ValidateGlobalInitializer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ValidateLimitations.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ValidateOutputs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\ValidateSwitch.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\VariableInfo.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\VariablePacker.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\compiler\translator\VersionGLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\angletypes.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\AttributeMap.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\BinaryStream.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Buffer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Caps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Compiler.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Config.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Constants.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Context.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Data.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Device.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Display.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Error.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\features.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Fence.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\formatutils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Framebuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\FramebufferAttachment.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\HandleAllocator.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\histogram_macros.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Image.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\ImageIndex.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\IndexRangeCache.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Program.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Query.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\queryconversions.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\RefCountObject.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Renderbuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\BufferImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\BufferImpl_mock.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\CompilerImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\BufferD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\CompilerD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\copyimage.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Blit11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Buffer11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Clear11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\copyvertex.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\DebugAnnotator11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\dxgi_support_table.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Fence11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\formatutils11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Framebuffer11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Image11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\IndexBuffer11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\InputLayoutCache.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\internal_format_initializer_table.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\load_functions_table.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\NativeWindow.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\PixelTransfer11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Query11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Renderer11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\renderer11_utils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\RenderStateCache.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\RenderTarget11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\ShaderExecutable11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_gs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_ps_4f.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_ps_4i.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_ps_4ui.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\buffertotexture11_vs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\clearfloat11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\clearfloat11vs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\clearfloat11_fl9ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\clearsint11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\clearsint11vs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\clearuint11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\clearuint11vs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthrough2d11vs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthrough3d11gs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthrough3d11vs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughdepth2d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughlum2d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughlum3d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughlumalpha2d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughlumalpha3d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr2d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr2di11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr2dui11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr3d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr3di11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughr3dui11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg2d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg2di11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg2dui11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg3d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg3di11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrg3dui11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb2d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb2di11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb2dui11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb3d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb3di11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgb3dui11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba2d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba2di11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba2dui11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba3d11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba3di11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\passthroughrgba3dui11ps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlef2darrayps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlef2dps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlef3dps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlei2darrayps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlei2dps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzlei3dps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzleui2darrayps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzleui2dps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\shaders\compiled\swizzleui3dps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\SwapChain11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\swizzle_format_info.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\TextureStorage11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\texture_format_table.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\Trim11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\VertexArray11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d11\VertexBuffer11.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Blit9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Buffer9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\DebugAnnotator9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Fence9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\formatutils9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Framebuffer9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Image9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\IndexBuffer9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Query9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\Renderer9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\renderer9_utils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\RenderTarget9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\ShaderCache.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\ShaderExecutable9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\shaders\compiled\componentmaskps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\shaders\compiled\flipyvs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\shaders\compiled\luminanceps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\shaders\compiled\passthroughps.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\shaders\compiled\standardvs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\SwapChain9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\TextureStorage9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\VertexArray9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\VertexBuffer9.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\vertexconversion.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\d3d9\VertexDeclarationCache.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\DeviceD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\DisplayD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\DynamicHLSL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\EGLImageD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\formatutilsD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\FramebufferD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\generatemip.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\HLSLCompiler.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\ImageD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\imageformats.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\IndexBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\IndexDataManager.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\loadimage.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\loadimage_etc.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\ProgramD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\RenderbufferD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\RendererD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\RenderTargetD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\SamplerD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\ShaderD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\ShaderExecutableD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\SurfaceD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\SwapChainD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\TextureD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\TextureStorage.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\TransformFeedbackD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\VertexBuffer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\VertexDataManager.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\d3d\WorkaroundsD3D.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\DeviceImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\DisplayImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\FenceNVImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\FenceSyncImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\FramebufferImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\FramebufferImpl_mock.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\BlitGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\BufferGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\CompilerGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\DisplayGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\FenceNVGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\FenceSyncGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\formatutilsgl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\FramebufferGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\FunctionsGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\functionsgl_enums.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\functionsgl_typedefs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\ProgramGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\QueryGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\RenderbufferGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\RendererGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\renderergl_utils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\SamplerGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\ShaderGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\StateManagerGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\SurfaceGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\TextureGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\TransformFeedbackGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\VertexArrayGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\DisplayWGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\FunctionsWGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\functionswgl_typedefs.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\PbufferSurfaceWGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\wgl_utils.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\wgl\WindowSurfaceWGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\gl\WorkaroundsGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\ImageImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\ImageImpl_mock.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\ImplFactory.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\ProgramImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\ProgramImpl_mock.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\QueryImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\RenderbufferImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\RenderbufferImpl_mock.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\Renderer.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\SamplerImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\ShaderImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\SurfaceImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\TextureImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\TextureImpl_mock.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\TransformFeedbackImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\TransformFeedbackImpl_mock.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\renderer\VertexArrayImpl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\ResourceManager.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Sampler.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Shader.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\State.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Surface.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Texture.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\TransformFeedback.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Uniform.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\validationEGL.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\validationES.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\validationES2.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\validationES3.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\Version.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\VertexArray.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libANGLE\VertexAttribute.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_egl.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_egl_ext.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_gles_2_0.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_gles_2_0_ext.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libGLESv2\entry_points_gles_3_0.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libGLESv2\global_state.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\libGLESv2\resource.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\third_party\compiler\ArrayBoundsClamper.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\third_party\khronos\GL\wglext.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\third_party\murmurhash\MurmurHash3.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\third_party\systeminfo\SystemInfo.h" />
+    <ClInclude Include="..\..\..\..\Source\ANGLE\third_party\trace_event\trace_event.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CBA57EB7-7E8B-40CD-A022-6375FDB4BE2E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libGLES</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)Output\Obj\$(PlatformToolset)\$(Platform)\$(Configuration)\$(ProjectName)\$(TargetPlatformVersion)\</IntDir>
+    <OutDir>$(SolutionDir)Output\Bin\$(PlatformToolset)\$(Platform)\$(Configuration)\$(TargetPlatformVersion)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;LIBANGLE_IMPLEMENTATION;LIBGLESV2_IMPLEMENTATION;ANGLE_STANDALONE_BUILD;GL_GLEXT_PROTOTYPES;ANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ "d3dcompiler_47.dll", "d3dcompiler_46.dll", "d3dcompiler_43.dll" };GL_APICALL=;EGLAPI=;ANGLE_ENABLE_D3D9;ANGLE_ENABLE_D3D11;ANGLE_ENABLE_OPENGL;ANGLE_TRANSLATOR_IMPLEMENTATION;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBGLES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include\ANGLE\;..\..\..\..\Source\ANGLE\;;..\..\..\..\Source\ANGLE\third_party\khronos\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>..\..\..\..\Source\ANGLE\libGLESv2\libGLES.def</ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;LIBANGLE_IMPLEMENTATION;LIBGLESV2_IMPLEMENTATION;ANGLE_STANDALONE_BUILD;GL_GLEXT_PROTOTYPES;ANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ "d3dcompiler_47.dll", "d3dcompiler_46.dll", "d3dcompiler_43.dll" };GL_APICALL=;EGLAPI=;ANGLE_ENABLE_D3D9;ANGLE_ENABLE_D3D11;ANGLE_ENABLE_OPENGL;ANGLE_TRANSLATOR_IMPLEMENTATION;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;_DEBUG;_WINDOWS;_USRDLL;LIBGLES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include\ANGLE\;..\..\..\..\Source\ANGLE\;;..\..\..\..\Source\ANGLE\third_party\khronos\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>..\..\..\..\Source\ANGLE\libGLESv2\libGLES.def</ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;LIBANGLE_IMPLEMENTATION;LIBGLESV2_IMPLEMENTATION;ANGLE_STANDALONE_BUILD;GL_GLEXT_PROTOTYPES;ANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ "d3dcompiler_47.dll", "d3dcompiler_46.dll", "d3dcompiler_43.dll" };GL_APICALL=;EGLAPI=;ANGLE_ENABLE_D3D9;ANGLE_ENABLE_D3D11;ANGLE_ENABLE_OPENGL;ANGLE_TRANSLATOR_IMPLEMENTATION;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBGLES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include\ANGLE\;..\..\..\..\Source\ANGLE\;;..\..\..\..\Source\ANGLE\third_party\khronos\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>..\..\..\..\Source\ANGLE\libGLESv2\libGLES.def</ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;NOMINMAX;LIBANGLE_IMPLEMENTATION;LIBGLESV2_IMPLEMENTATION;ANGLE_STANDALONE_BUILD;GL_GLEXT_PROTOTYPES;ANGLE_PRELOADED_D3DCOMPILER_MODULE_NAMES={ "d3dcompiler_47.dll", "d3dcompiler_46.dll", "d3dcompiler_43.dll" };GL_APICALL=;EGLAPI=;ANGLE_ENABLE_D3D9;ANGLE_ENABLE_D3D11;ANGLE_ENABLE_OPENGL;ANGLE_TRANSLATOR_IMPLEMENTATION;ANGLE_TRANSLATOR_STATIC;ANGLE_ENABLE_HLSL;NDEBUG;_WINDOWS;_USRDLL;LIBGLES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Include\ANGLE\;..\..\..\..\Source\ANGLE\;;..\..\..\..\Source\ANGLE\third_party\khronos\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>..\..\..\..\Source\ANGLE\libGLESv2\libGLES.def</ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
